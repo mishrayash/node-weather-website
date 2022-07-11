@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 }
 .main-content{
     flex-grow:1;
@@ -22,11 +23,12 @@ header{
     margin-bottom: 48px;
 }
 h1{
-    font-size: 64px;
+    font-size: 70px;
     margin-bottom:16px ;
 }
 
 header a{
+    font-size:20 ;
     color:888888;
     margin-right:16px;
     text-decoration: none;
@@ -37,13 +39,28 @@ header a{
 
 input{
     border:1px solid #cccccc;
+    margin-top: 10px;
     padding:8px;
+    border-radius: 5px;
+    width:400px;
+    /* border: none; */
+    outline-style:none ;
+}
+input:focus::placeholder{
+    color:transparent;
+}
+input::placeholder{
+    color:#aaa;
+    transition: color 0.3s ease;
 }
 button{
+    width:90px;
     cursor:pointer;
     border:1px solid #888888;
     background:#888888;
     color:white;
     padding:8px;
+    border-radius: 5px;
+
 }
 
